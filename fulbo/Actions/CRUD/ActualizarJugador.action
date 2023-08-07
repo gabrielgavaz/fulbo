@@ -1,0 +1,20 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "ActualizarJugador"
+	},
+	"OnFailure": "/LigaArgentinaFutbol/Actions/CRUD/ErrorUpdate.action",
+	"OnSuccess": "/LigaArgentinaFutbol/Rules/ExitoActualizar.js",
+	"Target": {
+		"Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+		"EntitySet": "JugadoresSet",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"EQUIPOID": "{EQUIPOID}",
+		"NOMBRE": "/LigaArgentinaFutbol/Rules/Formatter/FormatterNombreActualizar.js",
+		"APELLIDO": "/LigaArgentinaFutbol/Rules/Formatter/FormatterApellidoActualizar.js",
+		"EDAD": "#Page:UpdateJugador/#Control:InputUpdateEdad/#Value",
+		"POSICION": "/LigaArgentinaFutbol/Rules/ValidarFormularioActualizar.js"
+	}
+}

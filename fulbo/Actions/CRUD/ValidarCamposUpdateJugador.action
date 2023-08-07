@@ -1,0 +1,14 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"ActionResult": {
+		"_Name": "ValidarCamposUpdateJugador"
+	},
+	"OnFailure": "/LigaArgentinaFutbol/Actions/ErrorValidarCampos.action",
+	"OnSuccess": "/LigaArgentinaFutbol/Actions/CRUD/ActualizarJugador.action",
+	"RequiredFields": [
+		"InputUpdateNombre",
+		"InputUpdateApellido",
+		"InputUpdateEdad",
+		"InputUpdatePosicion"
+	]
+}

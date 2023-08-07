@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Filter",
+	"ActionResult": {
+		"_Name": "FiltroJugadores"
+	},
+	"Filterable": "#Page:Jugadores/#Control:SectionedTable0",
+	"PageToOpen": "/LigaArgentinaFutbol/Pages/FiltrarJugadores.page"
+}

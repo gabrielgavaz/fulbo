@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ConfirmacionUpdateJugador"
+	},
+	"Message": "Desea actualizar jugador?",
+	"OKCaption": "Confirmar",
+	"OnOK": "/LigaArgentinaFutbol/Actions/CRUD/ValidarCamposUpdateJugador.action",
+	"CancelCaption": "Cancelar"
+}

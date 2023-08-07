@@ -1,0 +1,23 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "DescargarDatosOffline"
+	},
+	"OnFailure": "/LigaArgentinaFutbol/Actions/Offline/ErrorDescargarOffline.action",
+	"OnSuccess": "/LigaArgentinaFutbol/Actions/Offline/ExitoDescargarOffline.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Descargando datos...",
+	"Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+	"DefiningRequests": [
+		{
+			"Name": "EquiposSet",
+			"Query": "EquiposSet",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "JugadoresSet",
+			"Query": "JugadoresSet",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

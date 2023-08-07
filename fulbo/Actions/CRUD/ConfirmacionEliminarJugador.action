@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ConfirmacionEliminarJugador"
+	},
+	"Message": "Esta seguro de rescindir el contrato del jugador?",
+	"OKCaption": "Rescindir",
+	"OnOK": "/LigaArgentinaFutbol/Actions/CRUD/EliminarJugador.action",
+	"CancelCaption": "Cancelar"
+}

@@ -1,0 +1,8 @@
+{
+	"DestinationName": "FUTBOL",
+	"Headers": {
+		"X-Requested-With": "X"
+	},
+	"OfflineEnabled": false,
+	"SourceType": "Mobile"
+}

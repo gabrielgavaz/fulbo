@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToEquipos"
+	},
+	"PageToOpen": "/LigaArgentinaFutbol/Pages/Equipos.page"
+}

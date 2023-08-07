@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ConfirmacionCrearJugador"
+	},
+	"Message": "Desea agregar el jugador a su plantilla?",
+	"OKCaption": "Agregar",
+	"OnOK": "/LigaArgentinaFutbol/Actions/CRUD/ValidarCamposAgregarJugador.action",
+	"CancelCaption": "Cancelar"
+}

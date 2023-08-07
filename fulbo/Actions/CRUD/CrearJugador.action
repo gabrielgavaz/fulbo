@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CrearJugador"
+	},
+	"OnFailure": "/LigaArgentinaFutbol/Actions/CRUD/ErrorCrear.action",
+	"OnSuccess": "/LigaArgentinaFutbol/Rules/ExitoCrearJugador.js",
+	"Target": {
+		"Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+		"EntitySet": "JugadoresSet"
+	},
+	"Properties": {
+		"EQUIPOID": "{EQUIPOID}",
+		"NOMBRE": "/LigaArgentinaFutbol/Rules/Formatter/FormatterNombre.js",
+		"APELLIDO": "/LigaArgentinaFutbol/Rules/Formatter/FormatterApellido.js",
+		"EDAD": "#Page:AgregarJugador/#Control:InputEdad/#Value",
+		"POSICION": "/LigaArgentinaFutbol/Rules/ValidarFormulario.js"
+	}
+}

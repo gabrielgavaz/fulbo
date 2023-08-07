@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/LigaArgentinaFutbol/Rules/AppUpdateFailure.js",
+    "OnSuccess": "/LigaArgentinaFutbol/Rules/AppUpdateSuccess.js"
+}

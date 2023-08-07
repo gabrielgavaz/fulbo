@@ -1,0 +1,122 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "InputBuscarEquipo",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Separator": true,
+							"PlaceHolder": "Nombre del equipo",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Buscar",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://search",
+							"ImagePosition": "Leading",
+							"OnPress": "/LigaArgentinaFutbol/Actions/BusquedaEquipo.action"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+						"EntitySet": "EquiposSet",
+						"QueryOptions": "/LigaArgentinaFutbol/Rules/Formatter/FormatterQuery.js"
+					},
+					"_Name": "SectionContactCell0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ContactCell": {
+						"Visible": true,
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": []
+						},
+						"DetailImage": "sap-icon://soccer",
+						"Headline": "{NOMBRE}",
+						"Subheadline": "Estadio: {ESTADIO}",
+						"Description": "{CIUDAD}",
+						"OnPress": "/LigaArgentinaFutbol/Actions/NavToJugadores.action",
+						"ActivityItems": []
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"Search": {
+						"Placeholder": "Equipo"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Equipos",
+	"Caption": "Equipos",
+	"PrefersLargeCaption": true,
+	"OnReturning": "/LigaArgentinaFutbol/Rules/VerListaCompleta.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Lista Completa",
+				"Icon": "sap-icon://expand-all",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/LigaArgentinaFutbol/Rules/VerListaCompleta.js"
+			}
+		],
+		"_Name": "ActionBar1"
+	},
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Ver equipos cercanos",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/LigaArgentinaFutbol/Rules/SetearLocalizacion.js"
+			}
+		]
+	}
+}

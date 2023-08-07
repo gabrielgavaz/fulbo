@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorCambiosOffline"
+	},
+	"Message": "Error al realizar cambios offline"
+}

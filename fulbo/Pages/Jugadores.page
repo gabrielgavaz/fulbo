@@ -1,0 +1,120 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+						"EntitySet": "{@odata.readLink}/To_Jugadores",
+						"QueryOptions": "$orderby=POSICION"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{NOMBRE} {APELLIDO}",
+						"Subhead": "{EDAD} años",
+						"DisplayDescriptionInMobile": true,
+						"PreserveIconStackSpacing": true,
+						"AccessoryType": "detailButton",
+						"AccessoryButtonIcon": "sap-icon://action",
+						"Tags": [
+							{
+								"Color": "/LigaArgentinaFutbol/Rules/Formatter/FormatterPosicion.js",
+								"Text": "{POSICION}"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnAccessoryButtonPress": "/LigaArgentinaFutbol/Actions/CRUD/ListaCrud.action",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"LoadingIndicatorText": "",
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"Mode": "None",
+						"LongPressToEnable": "None",
+						"ExitOnLastDeselect": false
+					}
+				}
+			]
+		}
+	],
+	"DesignTimeTarget": {
+		"Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+		"EntitySet": "JugadoresSet"
+	},
+	"_Type": "Page",
+	"_Name": "Jugadores",
+	"Caption": "Jugadores",
+	"PrefersLargeCaption": true,
+	"OnReturning": "/LigaArgentinaFutbol/Rules/RefreshListaJugadores.js",
+	"OnResume": "/LigaArgentinaFutbol/Rules/RefreshListaJugadores.js",
+	"OnActivityBackPressed": "/LigaArgentinaFutbol/Rules/RefreshListaJugadores.js",
+	"OnCustomEventDataReceived": "/LigaArgentinaFutbol/Rules/RefreshListaJugadores.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Refrescar",
+				"Icon": "sap-icon://refresh",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/LigaArgentinaFutbol/Rules/RefreshListaJugadores.js"
+			},
+			{
+				"_Name": "ActionBarItem2",
+				"Caption": "Filtrar",
+				"Icon": "sap-icon://filter",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/LigaArgentinaFutbol/Actions/FiltroJugadores.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	},
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Agregar Jugador",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Icon": "sap-icon://add",
+				"Style": "",
+				"OnPress": "/LigaArgentinaFutbol/Actions/NavToAgregarJugador.action"
+			}
+		]
+	}
+}

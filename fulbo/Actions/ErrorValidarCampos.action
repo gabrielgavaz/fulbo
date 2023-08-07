@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorValidarCampos"
+	},
+	"Message": "No relleno todos los campos obligatorios"
+}

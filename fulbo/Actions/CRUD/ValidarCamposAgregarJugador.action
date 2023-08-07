@@ -1,0 +1,14 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"ActionResult": {
+		"_Name": "ValidarCamposAgregarJugador"
+	},
+	"OnFailure": "/LigaArgentinaFutbol/Actions/ErrorValidarCampos.action",
+	"OnSuccess": "/LigaArgentinaFutbol/Actions/CRUD/CrearJugador.action",
+	"RequiredFields": [
+		"InputNombre",
+		"InputApellido",
+		"InputEdad",
+		"InputPosicion"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.ODataService.DeleteEntity",
+	"ActionResult": {
+		"_Name": "EliminarJugador"
+	},
+	"OnFailure": "/LigaArgentinaFutbol/Actions/CRUD/ErrorEliminar.action",
+	"OnSuccess": "/LigaArgentinaFutbol/Actions/CRUD/ExitoEliminar.action",
+	"Target": {
+		"Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+		"EntitySet": "JugadoresSet",
+		"ReadLink": "{@odata.readLink}"
+	}
+}

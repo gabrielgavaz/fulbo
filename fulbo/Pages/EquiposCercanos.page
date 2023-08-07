@@ -1,0 +1,75 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{#Page:Equipos/#ClientData/#Property:Latitud}",
+							"_Name": "KeyValue0",
+							"KeyName": "Latitud",
+							"Visible": true
+						},
+						{
+							"Value": "{#Page:Equipos/#ClientData/#Property:Longitud}",
+							"_Name": "KeyValue1",
+							"KeyName": "Longitud",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Height": 300,
+					"Module": "ModuloMapa",
+					"Control": "ExtensionMapa",
+					"Class": "ClassMapa",
+					"ExtensionProperties": {
+						"Prop": {
+							"Latitud": "{#Page:Equipos/#ClientData/#Property:Latitud}",
+							"Longitud": "{#Page:Equipos/#ClientData/#Property:Longitud}"
+						}
+					}
+				}
+			]
+		}
+	],
+	"DesignTimeTarget": {
+		"Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+		"EntitySet": "EquiposSet"
+	},
+	"_Type": "Page",
+	"_Name": "EquiposCercanos",
+	"Caption": "Equipos cercanos",
+	"PrefersLargeCaption": true
+}

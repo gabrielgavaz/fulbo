@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "BusquedaEquipo"
+	},
+	"OnSuccess": "/LigaArgentinaFutbol/Rules/RefreshListaJugadores.js",
+	"Message": "Buscar equipo",
+	"OKCaption": "Buscar",
+	"OnOK": "/LigaArgentinaFutbol/Rules/BuscarEquipo.js",
+	"CancelCaption": "Cancelar"
+}

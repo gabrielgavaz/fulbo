@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Clear",
+	"ActionResult": {
+		"_Name": "LimpiarStorage"
+	},
+	"OnFailure": "/LigaArgentinaFutbol/Actions/Offline/ErrorCambiosOffline.action",
+	"OnSuccess": "/LigaArgentinaFutbol/Actions/Offline/CambiosGuardadosOffline.action",
+	"Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+	"Force": true
+}

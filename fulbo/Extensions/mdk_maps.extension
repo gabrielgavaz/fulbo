@@ -1,0 +1,27 @@
+{
+	"_Type": "Register.Type.ExtensionControl",
+	"Module": "ModuloMapa",
+	"Control": "ExtensionMapa",
+	"Class": "ClassMapa",
+	"Display": "/LigaArgentinaFutbol/Images/map.png",
+	"ExtensionPropertiesSchema": {
+		"type": "object",
+		"BindType": "",
+		"properties": {
+			"Prop": {
+				"type": "object",
+				"BindType": "",
+				"properties": {
+					"Latitud": {
+						"type": "string",
+						"BindType": ""
+					},
+					"Longitud": {
+						"type": "string",
+						"BindType": ""
+					}
+				}
+			}
+		}
+	}
+}

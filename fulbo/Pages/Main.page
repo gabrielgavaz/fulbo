@@ -1,0 +1,84 @@
+{
+	"Controls": [
+		{
+			"Header": {
+				"Headline": "Liga Argentina ",
+				"SubHeadline": "Futbol",
+				"Alignment": "left",
+				"IconIsCircular": false,
+				"DisableIconText": false
+			},
+			"Sections": [
+				{
+					"_Name": "SideDrawerSection0",
+					"Items": [
+						{
+							"Title": "Inicio",
+							"Image": "sap-icon://home",
+							"PageToOpen": "/LigaArgentinaFutbol/Pages/Inicio.page",
+							"_Name": "SideDrawerSection0Item0",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Equipos",
+							"Image": "sap-icon://soccer",
+							"PageToOpen": "/LigaArgentinaFutbol/Pages/Equipos.page",
+							"_Name": "SideDrawerSection0Item1",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Offline",
+							"Image": "sap-icon://disconnected",
+							"OnPress": "/LigaArgentinaFutbol/Actions/Offline/OfllineMode.action",
+							"_Name": "SideDrawerSection0Item2",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Online",
+							"Image": "sap-icon://connected",
+							"OnPress": "/LigaArgentinaFutbol/Actions/Service/InitializeOnline.action",
+							"_Name": "SideDrawerSection0Item3",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Guardar cambios",
+							"Image": "sap-icon://refresh",
+							"OnPress": "/LigaArgentinaFutbol/Actions/Offline/SubirCambiosOffline.action",
+							"_Name": "SideDrawerSection0Item4",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Chequear conexion",
+							"Image": "sap-icon://check-availability",
+							"OnPress": "/LigaArgentinaFutbol/Rules/ChequearConexion.js",
+							"_Name": "SideDrawerSection0Item5",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						}
+					],
+					"Visible": true,
+					"PreserveImageSpacing": true,
+					"SeparatorEnabled": true
+				}
+			],
+			"_Type": "Control.Type.SideDrawer",
+			"_Name": "SideDrawer0",
+			"AlwaysShowDrawerButton": false,
+			"ClearHistory": false
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main"
+}

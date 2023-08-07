@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorDescargarOffline"
+	},
+	"Message": "Error al descargar offline"
+}

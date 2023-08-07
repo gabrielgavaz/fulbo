@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorOffline"
+	},
+	"Message": "Error al iniciar offline"
+}

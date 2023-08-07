@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorEliminar"
+	},
+	"Message": "Error: {#ActionResults:EliminarJugador/error}"
+}

@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"ActionResult": {
+		"_Name": "ListaCrud"
+	},
+	"PopoverItems": [
+		{
+			"Title": "Eliminar",
+			"Icon": "sap-icon://delete",
+			"Style": "",
+			"OnPress": "/LigaArgentinaFutbol/Actions/CRUD/ConfirmacionEliminarJugador.action",
+			"Visible": true,
+			"Enabled": true
+		},
+		{
+			"Title": "Actualizar",
+			"Icon": "sap-icon://request",
+			"Style": "",
+			"OnPress": "/LigaArgentinaFutbol/Actions/CRUD/NavToUpdateJugador.action",
+			"Visible": true,
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+    "Service": "/LigaArgentinaFutbol/Services/FUTBOL.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnSuccess": "/LigaArgentinaFutbol/Actions/Service/InitializeOnlineSuccessMessage.action",
+    "OnFailure": "/LigaArgentinaFutbol/Actions/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}
